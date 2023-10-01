@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react'
 import './Banner.css'
 import axios from 'axios'
-import { options } from '../../Constants/Constants'
-import { imageUrl } from '../../Constants/Constants'
+import { options, imageUrl } from '../../Constants/Constants'
+import { bannerImage } from '../../urls'
 
 function Banner() {
 
   const [movie, setMovie] = useState()
 
   useEffect(() => {
-   axios.get('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=horror', options).then( (res) => {
-    console.log(res.data.results[0])
+   axios.get(bannerImage, options).then( (res) => {
     setMovie(res.data.results[18])
    })
   }, [])
