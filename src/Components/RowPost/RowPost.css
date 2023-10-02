@@ -18,10 +18,22 @@
 .poster{
     max-height: 245px;
     margin-right: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
 
+.poster:hover{
+    transform: scale(1.1);
 }
 
 .smallPoster{
     max-height: 170px;
     margin-right: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.smallPoster:hover{
+    transform: scale(1.3);
+    transition: 100ms;
 }
