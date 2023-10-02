@@ -16,6 +16,27 @@
     width: 85px;
 }
 
+.input{
+    position: fixed;
+    right: 160px;
+    height: 25px;
+    background-color: #ced4da;
+    border-radius: 25px;
+    padding-left: 12px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn{
+    position: fixed;
+    right: 118px;
+    height: 29px;
+    width: 35px;
+    background-color: #284b63;
+    color: white;
+    border-radius: 25px;
+}
+
 .avatar{
     position: fixed;
     right: 20px;
