@@ -23,7 +23,7 @@
 }
 
 .poster:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .smallPoster{
@@ -34,6 +34,10 @@
 }
 
 .smallPoster:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
     transition: 100ms;
+}
+
+h4{
+    margin-top: 8px;
 }

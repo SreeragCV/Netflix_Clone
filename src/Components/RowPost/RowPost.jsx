@@ -41,7 +41,10 @@ function RowPost({title, isSmall, url}) {
             <h2>{title}</h2>
             <div className='posters'>
                 {movie.map((obj, i) => (
+                    <div>
                     <img onClick={() => handleMOvie(obj.id)} className={isSmall ? 'smallPoster' : 'poster'} alt='poster' src={obj ? `${imageUrl+obj.backdrop_path}` : "" } key={i} />
+                    <h4>{obj.title}</h4>
+                    </div>
                 ))}
             </div>
             { urlId && <YouTube videoId={urlId.key} opts={opts} />}
