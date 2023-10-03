@@ -25,6 +25,7 @@
     padding-left: 12px;
     font-weight: 500;
     font-size: 14px;
+    
 }
 
 .btn{
@@ -42,3 +43,9 @@
     right: 20px;
     width: 30px;
 }
+
+@media (max-width: 800px) {
+    .input, .btn {
+      display: none; 
+    }
+  }
