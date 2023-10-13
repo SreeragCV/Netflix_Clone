@@ -11,7 +11,7 @@ function App() {
     <div className="app">
      <NavBar/>
      <Banner/>
-     <RowPost url={Originals} title={'Netflix Originals'} />
+     <RowPost url={Originals} title={'Trending'} />
      <RowPost url={Action} title={'Action'} isSmall />
      <RowPost url={Horror} title={'Horror'} isSmall />
      <RowPost url={Comedy} title={'Comedy'} isSmall />

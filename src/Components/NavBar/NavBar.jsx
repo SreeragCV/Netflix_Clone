@@ -14,14 +14,16 @@ const [movie, setMovie] = useState('');
     })
   }
 
+  const foundMovie = (e) => {
+    setMovie(e.target.value)
+  }
 
 
 
   return (
     <div className='navbar'>
       <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="" />
-      <form action=""/>
-      <input className='input' value={movie} onChange={ e => setMovie(e.target.value)} type="text" placeholder='Search...' />
+      <input className='input' value={movie} onChange={foundMovie} type="text" placeholder='Search...' />
       <button onClick={() => searchMovie(movie)} className='btn'>&#x1F50E;&#xFE0E;</button>
       <img className='avatar' src="https://i.pinimg.com/originals/0d/dc/ca/0ddccae723d85a703b798a5e682c23c1.png" alt="" />
     </div>

@@ -10,7 +10,7 @@ function Banner() {
 
   useEffect(() => {
    axios.get(bannerImage, options).then( (res) => {
-    setMovie(res.data.results[16])
+    setMovie(res.data.results[17])
    })
   }, [])
 
