@@ -19,7 +19,7 @@ function RowPost({title, isSmall, url}) {
         })
     }, [])
 
-    const handleMOvie = (id) => {
+    const handleMovie = (id) => {
         axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, options).then(res => {
          if(res.data.results.length !== 0){
             setUrlId(res.data.results[0]); } else {
@@ -42,7 +42,7 @@ function RowPost({title, isSmall, url}) {
             <div className='posters'>
                 {movie.map((obj, i) => (
                     <div key={i}>
-                    <img onClick={() => handleMOvie(obj.id)} className={isSmall ? 'smallPoster' : 'poster'} alt='poster' src={obj ? `${imageUrl+obj.backdrop_path}` : "" } key={i} />
+                    <img onClick={() => handleMovie(obj.id)} className={isSmall ? 'smallPoster' : 'poster'} alt='poster' src={obj ? `${imageUrl+obj.backdrop_path}` : "" } key={i} />
                     <h4>{obj.title}</h4>
                     </div>
                 ))}
