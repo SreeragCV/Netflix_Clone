@@ -9,9 +9,9 @@ function Home() {
        <NavBar/>
        <Banner/>
        <RowPost url={Originals} title={'Trending'} />
-       <RowPost url={Action} title={'Action'} isSmall />
-       <RowPost url={Horror} title={'Horror'} isSmall />
-       <RowPost url={Comedy} title={'Comedy'} isSmall />
+       <RowPost url={Action} title={'Action'} isSmall={true} />
+       <RowPost url={Horror} title={'Horror'} isSmall={true} />
+       <RowPost url={Comedy} title={'Comedy'} isSmall={true} />
       </div>
     );
   }

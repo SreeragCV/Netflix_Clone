@@ -1,0 +1,16 @@
+.parentDiv{
+    margin-top: 3000px;
+}
+
+.posters{
+    margin-top: 30px;
+    display: flex;
+    padding: 20px;
+}
+
+.searchImg{
+    max-height: 245px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 100ms;
+}

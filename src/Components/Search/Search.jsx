@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ResultContext } from "../../Store/CreateContext";
 import { imageUrl } from "../../Constants/Constants";
+import './Search.css'
 
 function SearchResult() {
   const { movie } = useContext(ResultContext);
@@ -8,15 +9,16 @@ function SearchResult() {
   
   return (
   <div className="ParentDiv">
+    <div className="posters">
       {
         movie?.map((movie)=>{
           return(
-            <div>
-              <img src={imageUrl+movie.poster_path} alt="" />
-            </div>
+            
+              <img className="searchImg"  src={imageUrl+movie.poster_path} alt="" />
             )
         })
       }
+      </div>
   </div>
   );
 }

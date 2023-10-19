@@ -36,6 +36,7 @@
     background-color: #284b63;
     color: white;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .avatar{
