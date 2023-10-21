@@ -9,8 +9,19 @@
 }
 
 .searchImg{
+
     max-height: 245px;
-    margin-right: 10px;
     cursor: pointer;
+    margin-right: 8px;
     transition: 100ms;
+    margin-top: 18px;
+}
+
+.searchImg:hover{
+    transform: scale(1.08);
+}
+
+p{
+    color: white;
+    font-size: 18px;
 }

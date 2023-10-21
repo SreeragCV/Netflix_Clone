@@ -22,7 +22,7 @@ function RowPost({title, isSmall, url}) {
     const handleMovie = (id) => {
         axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, options).then(res => {
          if(res.data.results.length !== 0){
-            setUrlId(res.data.results[7])}
+            setUrlId(res.data.results[0])}
       })
     }
 
